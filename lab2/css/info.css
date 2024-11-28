@@ -1,0 +1,336 @@
+.info {
+    margin-top: 116.41px;
+    margin-bottom: 65px;
+}
+
+.reminders {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reminders__block {
+    display: flex;
+    width: 380px;
+    height: 67px;
+    align-items: center;
+    margin-bottom: 17px;
+    border-radius: 17px;
+    box-shadow: 0 5px 10px #f2f5fa;
+    color: #000;
+    font-weight: 500;
+    font-family: Gilroy-Thin;
+}
+
+.reminders__block_description {
+    margin-left: 17px;
+}
+
+.reminders__name {
+    font-weight: 600;
+}
+
+.profile_icon {
+    width: 34px;
+    height: 34px;
+    margin-left: 15px;
+}
+
+.reminders__follow_up {
+    color: #26C296;
+}
+
+.reminders__info {
+    width: 343px;
+}
+
+.reminders__follow_up_info {
+    font-weight: 700;
+    color: #222;
+    font-size: 25px;
+    font-family: Gilroy;
+}
+
+.reminders__follow_up_info_desc {
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 16px;
+    font-family: Gilroy-Thin;
+    line-height: 22px;
+}
+
+.reminders__options {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.reminders__option_col {
+    margin-right: 27px;
+}
+
+.reminders__option {
+    margin-top: 16px;
+    display: flex;
+}
+
+.reminders__check_img {
+    width: 13px;
+    margin-right: 4px;
+}
+
+.sync {
+    display: flex;
+    margin-bottom: 65px;
+}
+
+.sync__person {
+    display: flex;
+}
+
+.sync__image {
+    height: 42px;
+    width: 42px;
+}
+
+.sync__info {
+    width: 380px;
+}
+
+.sync_image {
+    height: 52px;
+    width: 52px;
+    margin-bottom: 29px;
+}
+
+.sync__portfolio {
+    margin-left: 70px;
+    width: 352px;
+    padding-top: 20px;
+    padding-left: 20px;
+    border-radius: 21px;
+    box-shadow: 0 13px 10px #f2f5fa;
+}
+
+.sync__person_desc {
+    margin: auto;
+    margin-left: 10px;
+}
+
+.sync__person_name {
+    font-weight: 600;
+    font-size: 17px;
+    color: #222;
+}
+
+.sync__person_position {
+    font-weight: 500;
+    color: rgb(34, 34, 34, 80);
+}
+
+.sync__portfolio ul {
+    margin-top: 36px;
+}
+
+.sync__portfolio li {
+    display: flex;
+    margin-left: -40px;
+    align-items: center;
+    font-weight: 500;
+    margin-bottom: 17px;
+}
+
+.sync__portfolio li img {
+    height: 14px;
+    width: 14px;
+    margin-right: 4px;
+}
+
+.sync__desc {
+    width: 343px;
+}
+
+.stay_connected img {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 16px;
+}
+
+.stay_connected {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    align-items: center;
+}
+
+.stay_connected__queue {
+    width: 380px;
+    height: 160px;
+    border-radius: 21px;
+    box-shadow: 0 14px 10px #f2f5fa;
+    padding: 13px;
+}
+
+.stay_connected__info {
+    width: 343px;
+}
+
+.stay_connected__title {
+    font-weight: 700;
+    font-size: 25px;
+    font-family: Gilroy;
+    color: #222;
+    margin-bottom: 16px;
+}
+
+.stay_connected__description {
+    font-weight: 500;
+    color: #73738D;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.queue__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.queue__title img {
+    width: 13px;
+    height: 3px;
+}
+
+.queue__top {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 3px;
+}
+
+.queue__down {
+    font-size: 11px;
+    font-weight: 500;
+    color: rgb(34, 34, 34);
+}
+
+.queue__description {
+    color: rgb(115, 115, 141, 80);
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .info {
+        display: block;
+        margin-top: 0px;
+        /* text-align: center; */
+    }
+
+    .reminders {
+        display: block;
+        width: 80%;
+    }
+
+    .reminders__notifications {
+        width: 100%;
+    }
+
+    .reminders__block {
+        display: flex;
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .reminders__info {
+        text-align: center;
+    }
+
+    .reminders__follow_up_info {
+        width: 80%;
+    }
+
+    .reminders__follow_up_info_desc {
+        width: 80%;
+    }
+
+    .reminders__options {
+        width: 90%;
+        justify-content: center;
+    }
+
+    .mg {
+        display: none;
+    }
+
+    .sync {
+        display: block;
+    }
+
+    .sync__info {
+        margin-top: 60px;
+        width: 120%;
+        text-align: center;
+    }
+
+    .sync__portfolio {
+        display: none;
+    }
+
+    .stay_connected__info img {
+        display: none;
+    }
+
+    .stay_connected__info {
+        margin-top: 60px;
+        width: 100%;
+    }
+
+    .reminders__options_2 {
+        display: none;
+    }
+
+    .stay_connected {
+        display: block;
+        font-size: 16px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .stay_connected__queue {
+        width: 80%;
+    }
+
+    .queue__image {
+        display: none;
+    }
+
+    .queue__header {
+        width: 100%
+    }
+}
+
+@media screen and (min-width: 2500px) {
+    .reminders__notifications {
+        width: 1000px;
+        align-items: center;
+    }
+    .reminders__block {
+        width: 900px;
+        font-size: 18px;
+    }
+
+    .sync {
+        /* width: 1500px; */
+        font-size: 18px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .stay_connected {
+        display: none;
+    }
+}

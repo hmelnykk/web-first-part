@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="src/main.js"></script>
+</head>
+<body class="bg-gradient-to-r from-violet-600 to-indigo-600">
+    <div id="add-modal" class="fixed bg-black/50 w-screen h-screen flex justify-center items-center hidden">
+        <div class="addNew-modal bg-white p-4 rounded-[6px] border w-[20vw]">
+            <header class="flex justify-between">
+                <h1 class="text-black">Add a new item</h1>
+                <button onclick="addNewCard()">x</button>
+            </header>
+            <hr class="my-4">
+            <form class="add-new-card">
+                <p id="new-card-name" class="text-slate-600">Name</p>
+                <input type="text" id="new-card-name-input" class="w-[100%] p-2 rounded-[12px]" placeholder="Name">
+                <p id="new-card-velocity" class="text-slate-600">Velocity</p>
+                <input type="number" min="0" id="new-card-vel-input" class="w-[100%] p-2 rounded-[12px]" placeholder="Velocity">
+                <p id="new-card-weight" class="text-slate-600">Weight</p>
+                <input type="number" min="0" id="new-card-weight-input" class="w-[100%] p-2 rounded-[12px]" placeholder="Weight">
+                <button id="new-modal-btn" class='block text-black border border-slate-300 p-2 rounded-[12px] mt-2 hover:bg-slate-200/50 transition-all'>Submit</button>
+            </form>
+        </div>
+    </div>
+    <div id="edit-modal" class="fixed bg-black/50 w-screen h-screen flex justify-center items-center hidden">
+        <div class="addNew-modal bg-white p-4 rounded-[6px] border w-[20vw]">
+            <header class="flex justify-between">
+                <h1 class="text-black">Edit a Card</h1>
+                <button onclick="closeEditModal()">x</button>
+            </header>
+            <hr class="my-4">
+            <form class="add-new-card">
+                <p id="edit-card-name" class="text-slate-600">Name</p>
+                <input type="text" id="edit-card-name-input" class="w-[100%] p-2 rounded-[12px]" placeholder="Name">
+                <p id="edit-card-velocity" class="text-slate-600">Velocity</p>
+                <input type="number" min="0" id="edit-card-vel-input" class="w-[100%] p-2 rounded-[12px]" placeholder="Velocity">
+                <p id="edit-card-weight" class="text-slate-600">Weight</p>
+                <input type="number" min="0" id="edit-card-weight-input" class="w-[100%] p-2 rounded-[12px]" placeholder="Weight">
+                <button id="edit-modal-btn" class='block text-black border border-slate-300 p-2 rounded-[12px] mt-2 hover:bg-slate-200/50 transition-all'>Submit</button>
+            </form>
+        </div>
+    </div>
+    <header class="flex justify-around h-16 bg-white/20 items-center text-white w-[900px] mx-auto mt-9 rounded-[30px]">
+        <div class="header__pagination_buttons flex">
+            <p class="p-2 title text-lg mr-5 font-bold">Insects</p>
+            <button class="w-24 p-2 shadow-xl bg-slate-300/20 rounded-full mr-2 transition-all hover:bg-transparent hover:border hover:border-slate-300">Showroom</button>
+            <button onclick="addNewCard()"
+            class="w-24 p-2 shadow-xl bg-slate-300/50 rounded-full transition-all hover:bg-transparent hover:border hover:border-slate-300">Add new</button>
+        </div>
+        <div>
+            <input id="search-input" type="text" class="search w-80 rounded-full p-2 bg-transparent placeholder-slate-300 border-slate-300 border" placeholder="Search...">
+            <button class="w-24 p-2 shadow-xl bg-slate-300/50 rounded-full transition-all hover:bg-transparent hover:border hover:border-slate-300"
+            onclick="searchCard()">Search</button>
+            <button class="w-24 p-2 shadow-xl bg-transparent text-white border border-red-500 rounded-full mr-2 transition-all hover:bg-red-500 hover:border-0"
+            onclick="clearSearch()">Clear</button>
+        </div>
+        <div></div>
+    </header>
+    <main class="flex justify-center p-16">
+        <div id="sidebar" class="w-80 h-80 bg-white/20 mr-16 p-2 rounded-[12px] border border-slate-300 text-white">
+            <input type="checkbox" name="sort-by-velocity" id="vel-sort-checkbox" onclick="sortCheckbox(this)">
+            <label for="sort-by-velocity">Sort by velocity</label>
+            <hr>
+            <button onclick="alertAverageVelocity()" class="border border-slate-300 p-2 rounded-[12px] w-[100%] mt-2 hover:bg-slate-200/50 transition-all">Count average velocity</button>
+        </div>
+        <div id="showroom" class="w-[518px] p-2 bg-white/20 rounded-[12px] justify-center space-y-5 border border-slate-300">
+            
+        </div>
+        
+    </main>
+</body>
+</html>

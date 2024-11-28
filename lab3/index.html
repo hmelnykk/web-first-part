@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="src/main.js"></script>
+</head>
+<body class="bg-gradient-to-r from-violet-600 to-indigo-600">
+    <header class="flex justify-around h-16 bg-white/20 items-center text-white w-[1100px] mx-auto mt-9 rounded-[30px]">
+        <div class="header__pagination_buttons flex">
+            <p class="p-2 title text-lg mr-5 font-bold">Insects</p>
+            <button class="w-24 p-2 shadow-xl bg-slate-300/20 rounded-full mr-2 transition-all hover:bg-transparent hover:border hover:border-slate-300">Showroom</button>
+            <button class="w-24 p-2 shadow-xl bg-slate-300/50 rounded-full transition-all hover:bg-transparent hover:border hover:border-slate-300">Add new</button>
+        </div>
+        <div>
+            <input id="search-input" type="text" class="search w-80 rounded-full p-2 bg-transparent placeholder-slate-300 border-slate-300 border" placeholder="Search...">
+            <button class="w-24 p-2 shadow-xl bg-slate-300/50 rounded-full transition-all hover:bg-transparent hover:border hover:border-slate-300"
+            onclick="searchCard()">Search</button>
+            <button class="w-24 p-2 shadow-xl bg-transparent text-white border border-red-500 rounded-full mr-2 transition-all hover:bg-red-500 hover:border-0"
+            onclick="clearSearch()">Clear</button>
+        </div>
+        <div></div>
+    </header>
+    <main class="flex justify-center p-16">
+        <div id="sidebar" class="w-80 h-80 bg-white/20 mr-16 p-2 rounded-[12px] border border-slate-300 text-white">
+            <input type="checkbox" name="sort-by-velocity" id="vel-sort-checkbox" onclick="sortCheckbox(this)">
+            <label for="sort-by-velocity">Sort by velocity</label>
+            <hr>
+            <button onclick="alertAverageVelocity()" class="border border-slate-300 p-2 rounded-[12px] w-[100%] mt-2 hover:bg-slate-200/50 transition-all">Count average velocity</button>
+        </div>
+        <div id="showroom" class="max-w-3xl p-2 bg-white/20 rounded-[12px] flex flex-wrap justify-center space-y-5 border border-slate-300">
+            <div id="showroom-1" class="w-40 bg-slate-200 p-2 rounded-[12px] mr-3 h-[130px] text-center shadow-xl">
+                <p class="text-lg">Insect</p>
+                <ul>
+                    <li>velocity: 352</li>
+                    <li>weight: 0.01</li>
+                </ul>
+                <button class="mt-2 p w-24 border border-red-500 rounded-full text-red-500 hover:bg-red-500 hover:text-white">delete</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

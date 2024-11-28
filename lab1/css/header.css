@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-family: Gilroy;
+
+    /* trying to make sticky header */
+    /*background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: min-content;*/
+}
+
+.header__nav ul {
+    display: flex;
+}
+
+.header__nav-item {
+    margin-right: 60px;
+}
+
+.header__title {
+    font-weight: 700;
+    color: #222;
+    font-size: 24.12px;
+}

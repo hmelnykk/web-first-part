@@ -1,0 +1,16 @@
+.footer__title {
+    font-weight: 700;
+    font-family: Gilroy;
+    font-size: 17px;
+    line-height: 20px;
+    color: #222;
+    text-align: center;
+    margin-bottom: 17px;
+}
+
+.footer__copyright {
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    margin-bottom: 32px;
+}

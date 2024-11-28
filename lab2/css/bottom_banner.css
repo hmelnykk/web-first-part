@@ -1,0 +1,47 @@
+.bottom_banner {
+    width: 793px;
+    border-radius: 9px;
+    box-shadow: 0 14px 10px #f2f5f2;
+    padding: 22px;
+    margin-bottom: 62px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bb__title {
+    font-family: Gilroy;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #222;
+    width: 550px;
+}
+
+.bb_desc {
+    font-family: Gilroy;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .bottom_banner {
+        width: auto;
+        text-align: center;
+        display: block;
+        margin-top: 130px;
+    }
+    .bb__title {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (min-width: 2500px) {
+    .bottom_banner {
+        width: 100%;
+        font-size: 18px;
+    }
+}
